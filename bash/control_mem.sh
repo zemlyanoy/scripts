@@ -47,7 +47,7 @@ MemAsPercentage
         LogTemplate >> $Log
         AppMem=$(ps axo rss,comm,pid | awk '{ proc_list[$2] += $1; } END { for (proc in proc_list) { printf("%d\t%s\n", proc_list[proc],proc); }}' | sort -n | tail -n 1 | awk '{$1/=1024;printf "%.0fMB used ",$1}{print $2 " application"}')
         echo "$AppMem" >> $Log
-        /usr/bin/supervisorctl restart all #make sure that your user have enough permissions to run this command
+        /usr/bin/supervisorctl restart all #[change this line] make sure that your user have enough permissions to run this command 
          else 
         State="Idle"
         echo $State > /dev/null
