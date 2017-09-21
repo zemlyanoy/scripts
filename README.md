@@ -8,11 +8,6 @@ As far as possible, the repository will be supplemented: new scripts will be app
 
 There are descriptions for developed shell scripts listed below:
 
-File  | Description | Requirements
-----------------|--------------------------------------|----------------------
-**control_mem.sh**  | Script for restart **supervisorctl** with dependence by memory usage (as percentage) | None
-**backup.sh**  | Script for restart **supervisorctl** with dependence by memory usage (as percentage)      | None
-
 
 File Name  | Description                    | Requirements                    | Notes
 ----------------|--------------------------------------|----------------------|----------------------
