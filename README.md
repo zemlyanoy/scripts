@@ -8,9 +8,16 @@ As far as possible, the repository will be supplemented: new scripts will be app
 
 There are descriptions for developed shell scripts listed below:
 
-File  | Description
-----------------|----------------------
-**control_mem.sh**  | Script for restart **supervisorctl** with dependence by memory usage (as percentage)
+File  | Description | Requirements
+----------------|--------------------------------------|----------------------
+**control_mem.sh**  | Script for restart **supervisorctl** with dependence by memory usage (as percentage) | None
+**backup.sh**  | Script for restart **supervisorctl** with dependence by memory usage (as percentage)      | None
 
+
+File Name  | Description                    | Requirements                    | Notes
+----------------|--------------------------------------|----------------------|----------------------
+**control_mem.sh**       | Script for restart **supervisorctl** with dependence by memory usage (as percentage) | None | You may modify this script by changing the main command `/usr/bin/supervisorctl restart all` on your own command 
+**backup.sh**       |  Script for backup **MongoDB** databases with compression | On the same dir where backup script located you need to create config.txt with following syntax: `user_for_dbconnection:ip_address:port:database_name`
+test   | test | test | test
 
 ### 
