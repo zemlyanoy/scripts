@@ -40,9 +40,8 @@ MemAsPercentage
 
  if [ "$FreePercentage" -ge "60" ]; then
     State="Normal"
-    echo $State
     LogTemplate >> $Log
-      elif [ "$FreePercentage" -le "37" ]; then
+      elif [ "$FreePercentage" -le "10" ]; then
         State="Critical"
         LogTemplate >> $Log
         AppMem=$(ps axo rss,comm,pid | awk '{ proc_list[$2] += $1; } END { for (proc in proc_list) { printf("%d\t%s\n", proc_list[proc],proc); }}' | sort -n | tail -n 1 | awk '{$1/=1024;printf "%.0fMB used ",$1}{print $2 " application"}')
