@@ -1,6 +1,6 @@
 #!/bin/bash
 
-### Write by Maxim Zemlyanoy 
+### by Maxim Zemlyanoy 
 ### 09.20.17
 
 User=$(ls -l $0 | awk '{print $3}')
